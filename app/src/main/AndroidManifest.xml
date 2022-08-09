@@ -11,8 +11,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.JUETOutpass"
+        android:theme="@style/Theme.MaterialComponents.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".Login_Activity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context=".MainActivity">
+    tools:context=".Login_Activity">
 
     <com.flaviofaria.kenburnsview.KenBurnsView
         android:id="@+id/image"
