@@ -6,8 +6,11 @@
         <entry key="app/src/main/res/drawable/ic_background_dark.xml" value="0.173" />
         <entry key="app/src/main/res/drawable/ic_background_light.xml" value="0.173" />
         <entry key="app/src/main/res/layout-night/activity_login.xml" value="0.2599591419816139" />
+        <entry key="app/src/main/res/layout-night/activity_main.xml" value="0.2599591419816139" />
+        <entry key="app/src/main/res/layout-night/activity_splash_screen.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.2609805924412666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.23020833333333332" />
       </map>
     </option>
   </component>
