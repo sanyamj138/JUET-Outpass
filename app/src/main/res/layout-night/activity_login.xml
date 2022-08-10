@@ -3,12 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
-    android:focusable="true">
+    android:focusable="true"
+    android:background="#334257">
 
-    <com.flaviofaria.kenburnsview.KenBurnsView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/ic_background_dark" />
+<!--    <com.flaviofaria.kenburnsview.KenBurnsView-->
+<!--        android:id="@+id/image"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/ic_background_dark" />-->
 
 </RelativeLayout>
