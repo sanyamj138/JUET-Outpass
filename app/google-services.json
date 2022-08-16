@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "313748775154",
+    "project_id": "juet-outpass",
+    "storage_bucket": "juet-outpass.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313748775154:android:9a866dab3fa049b439706b",
+        "android_client_info": {
+          "package_name": "com.sanyamjain.juet_outpass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313748775154-gavgod0hfo0vin12esnigif4orpe27d8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sanyamjain.juet_outpass",
+            "certificate_hash": "2da918aed8fdf5d7e7d0b0ea71ee32d173d93fa6"
+          }
+        },
+        {
+          "client_id": "313748775154-csih6s97vcrra56urd373ui5cg59v3mk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-CCLfJ6IXGPIq7RdKIMIfqbgbKHWlXFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313748775154-csih6s97vcrra56urd373ui5cg59v3mk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
