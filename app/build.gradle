@@ -61,7 +61,9 @@ dependencies {
         implementation 'com.google.firebase:firebase-firestore'
     }
 
-    //Lottie Files
+    // Google Sign in Button
+    implementation 'com.shobhitpuri.custombuttons:google-signin:1.1.0'
+
     //Lottie Files
     implementation "com.airbnb.android:lottie:3.7.0"
 

@@ -106,7 +106,6 @@ class Login_Activity : AppCompatActivity() {
                     Firebase.auth.signOut()
                 googleSignInClient.revokeAccess()
                 Toast.makeText(this,"Sign In with JUET account",Toast.LENGTH_LONG).show()
-
             }
 
         } else {
