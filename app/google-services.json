@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "313748775154-7mjagjspvhe6egcu99ua6pdab73b6a6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sanyamjain.juet_outpass",
+            "certificate_hash": "dd2712fb79d91ffeb022a3a353a4a6264837bd8c"
+          }
+        },
+        {
           "client_id": "313748775154-gavgod0hfo0vin12esnigif4orpe27d8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
