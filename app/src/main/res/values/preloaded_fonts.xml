@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abhaya_libre_semibold</item>
+        <item>@font/adamina</item>
+        <item>@font/aguafina_script</item>
+        <item>@font/alex_brush</item>
+        <item>@font/alike_angular</item>
+        <item>@font/almendra_display</item>
+        <item>@font/amethysta</item>
+        <item>@font/bangers</item>
+        <item>@font/brawler</item>
+    </array>
+</resources>

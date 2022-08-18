@@ -7,15 +7,24 @@
     android:background="#FAEEE0"
     tools:context=".SplashScreen">
 
+    <ImageView
+        android:id="@+id/projectName"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo_name" />
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/startingAnim"
-        android:layout_width="500dp"
-        android:layout_height="250dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/projectName"
         android:layout_centerInParent="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="150dp"
         android:elevation="50dp"
         app:lottie_autoPlay="true"
-        app:lottie_fileName="plane-ticket.json"
+        app:lottie_fileName="travel.json"
         app:lottie_loop="true" />
 
 </RelativeLayout>

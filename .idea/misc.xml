@@ -8,11 +8,12 @@
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_main.xml" value="0.16145833333333334" />
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_splash_screen.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/drawable/ic_background_dark.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/progress_bg.xml" value="0.173" />
         <entry key="app/src/main/res/layout-night/activity_login.xml" value="0.2609805924412666" />
         <entry key="app/src/main/res/layout-night/activity_splash_screen.xml" value="0.2609805924412666" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.20485382080078124" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2609805924412666" />
-        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.18283233642578123" />
       </map>
     </option>
   </component>

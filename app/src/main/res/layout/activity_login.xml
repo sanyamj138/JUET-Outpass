@@ -18,11 +18,28 @@
 
     <ImageButton
         android:id="@+id/signInButton"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/google_dark" />
+        android:layout_below="@+id/projectName"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/google_button" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress_bg" />
+
+    <ImageView
+        android:id="@+id/projectName"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo_name" />
 
     <!--    <com.google.android.gms.common.SignInButton-->
     <!--        android:id="@+id/signInButton"-->
@@ -33,11 +50,5 @@
     <!--        android:layout_marginEnd="20dp"-->
     <!--        android:layout_marginBottom="20dp"-->
     <!--        android:visibility="visible" />-->
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone" />
 
 </RelativeLayout>
