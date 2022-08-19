@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name" translatable="false">JUET Outpass</string>
+    <string name="student_name">Name of the Student</string>
+    <string name="student_enrollment">Enrollment of the Student</string>
+<!--    <string name="student_branch">Branch of the student</string>-->
+<!--    <string name="student_year">Year of the student</string>-->
+    <string name="student_sem">Semester of the Student</string>
+<!--    <string name="student_purpose">Purpose for Leave</string>-->
+    <string name="student_mobileNumber">Student Mobile Number</string>
+    <string name="parent_mobileNumber">Parent\'s Mobile Number</string>
 </resources>
