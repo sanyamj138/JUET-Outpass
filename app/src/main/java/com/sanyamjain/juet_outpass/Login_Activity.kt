@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Button
 import android.widget.Toast
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -97,8 +96,8 @@ class Login_Activity : AppCompatActivity() {
                 val usersDao = UserDao()
                 usersDao.addUser(user)
 
-                val mainActivityIntent = Intent(this, MainActivity::class.java)
-                startActivity(mainActivityIntent)
+                val profileActivityIntent = Intent(this, ProfileActivity::class.java)
+                startActivity(profileActivityIntent)
                 finish()
                 }else{
                 signInButton.visibility = View.VISIBLE
