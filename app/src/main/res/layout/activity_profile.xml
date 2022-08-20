@@ -64,7 +64,7 @@
                     android:fontFamily="@font/adamina"
                     android:hint="@string/student_name"
                     android:importantForAutofill="no"
-                    android:inputType="textEmailAddress"
+                    android:inputType="text"
                     android:textAlignment="center"
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
@@ -96,7 +96,7 @@
                     android:fontFamily="@font/adamina"
                     android:hint="@string/student_enrollment"
                     android:importantForAutofill="no"
-                    android:inputType="textEmailAddress"
+                    android:inputType="text"
                     android:textAlignment="center"
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
@@ -160,7 +160,7 @@
                     android:fontFamily="@font/adamina"
                     android:hint="@string/student_sem"
                     android:importantForAutofill="no"
-                    android:inputType="textEmailAddress"
+                    android:inputType="number"
                     android:textAlignment="center"
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
@@ -224,7 +224,7 @@
                     android:fontFamily="@font/adamina"
                     android:hint="@string/student_mobileNumber"
                     android:importantForAutofill="no"
-                    android:inputType="textEmailAddress"
+                    android:inputType="number"
                     android:textAlignment="center"
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
@@ -256,7 +256,7 @@
                     android:fontFamily="@font/adamina"
                     android:hint="@string/parent_mobileNumber"
                     android:importantForAutofill="no"
-                    android:inputType="textEmailAddress"
+                    android:inputType="number"
                     android:textAlignment="center"
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
