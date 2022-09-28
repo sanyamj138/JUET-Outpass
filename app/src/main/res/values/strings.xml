@@ -5,7 +5,9 @@
     <!--    <string name="student_branch">Branch of the student</string>-->
     <!--    <string name="student_year">Year of the student</string>-->
     <string name="student_sem">Semester of the Student</string>
+    <string name="place_on_leave">Place while on Leave</string>
     <string name="student_purpose">Purpose for Leave</string>
     <string name="student_mobileNumber">Student\'s Mobile Number</string>
     <string name="parent_mobileNumber">Parent\'s Mobile Number</string>
+    <string name="home_address">Enter Home Address</string>
 </resources>

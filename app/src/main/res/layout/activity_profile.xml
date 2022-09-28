@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAEEE0"
     tools:context=".ProfileActivity">
 
-    <!--    <com.flaviofaria.kenburnsview.KenBurnsView-->
-    <!--        android:id="@+id/image"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        android:src="@drawable/ic_background_light" />-->
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_soumyarao" />
 
     <TextView
         android:id="@+id/pageName"
@@ -20,14 +19,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:fontFamily="@font/amethysta"
+        android:fontFamily="@font/adamina"
         android:text="Profile"
         android:textAlignment="center"
         android:textColor="#545454"
         android:textSize="50dp" />
 
     <ScrollView
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="match_parent"
         android:layout_below="@+id/pageName"
         android:layout_centerHorizontal="true"
@@ -36,6 +35,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp"
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
@@ -45,9 +46,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/loginLogo"
                 android:layout_centerInParent="true"
-                android:padding="10dp"
-                android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
                 app:boxCornerRadiusBottomStart="25dp"
@@ -77,9 +78,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/loginLogo"
                 android:layout_centerInParent="true"
-                android:padding="10dp"
-                android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
                 app:boxCornerRadiusBottomStart="25dp"
@@ -141,9 +142,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/loginLogo"
                 android:layout_centerInParent="true"
-                android:padding="10dp"
-                android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
                 app:boxCornerRadiusBottomStart="25dp"
@@ -205,9 +206,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/loginLogo"
                 android:layout_centerInParent="true"
-                android:padding="10dp"
-                android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
                 app:boxCornerRadiusBottomStart="25dp"
@@ -231,15 +232,15 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/parentMobileHolder"
+                android:id="@+id/placeOnLeaveHolder"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/loginLogo"
+                android:layout_below="@+id/purposeHolder"
                 android:layout_centerInParent="true"
-                android:padding="10dp"
-                android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
                 app:boxCornerRadiusBottomStart="25dp"
@@ -248,19 +249,51 @@
                 app:boxStrokeColor="#545454">
 
                 <EditText
-                    android:id="@+id/parentMobile"
+                    android:id="@+id/placeOnLeave"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/adamina"
-                    android:hint="@string/parent_mobileNumber"
+                    android:hint="@string/home_address"
                     android:importantForAutofill="no"
-                    android:inputType="number"
+                    android:inputType="text"
                     android:textAlignment="center"
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/parentMobileHolder"-->
+            <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/loginLogo"-->
+            <!--                android:layout_centerInParent="true"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:textColorHint="#545454"-->
+            <!--                app:boxCornerRadiusBottomEnd="25dp"-->
+            <!--                app:boxCornerRadiusBottomStart="25dp"-->
+            <!--                app:boxCornerRadiusTopEnd="25dp"-->
+            <!--                app:boxCornerRadiusTopStart="25dp"-->
+            <!--                app:boxStrokeColor="#545454">-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/parentMobile"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerHorizontal="true"-->
+            <!--                    android:layout_centerVertical="true"-->
+            <!--                    android:fontFamily="@font/adamina"-->
+            <!--                    android:hint="@string/parent_mobileNumber"-->
+            <!--                    android:importantForAutofill="no"-->
+            <!--                    android:inputType="number"-->
+            <!--                    android:textAlignment="center"-->
+            <!--                    android:textColor="#545454"-->
+            <!--                    android:textColorHint="#545454" />-->
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
 
         </LinearLayout>
 

@@ -4,22 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAEEE0"
     tools:context=".SplashScreen">
 
-    <ImageView
-        android:id="@+id/projectName"
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_soumyarao" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:src="@drawable/logo_name" />
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/adamina"
+        android:text="JUET Outpass"
+        android:textAlignment="center"
+        android:textColor="#545454"
+        android:textSize="75dp" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/startingAnim"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:layout_below="@+id/projectName"
+        android:layout_below="@+id/appName"
         android:layout_centerInParent="true"
         android:layout_marginTop="150dp"
         android:elevation="50dp"

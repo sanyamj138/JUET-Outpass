@@ -4,8 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ApplicationActivity"
-    android:background="#FAEEE0">
+    tools:context=".ApplicationActivity">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_soumyarao" />
 
     <TextView
         android:id="@+id/applicationName"
@@ -14,14 +19,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:fontFamily="@font/amethysta"
+        android:fontFamily="@font/adamina"
         android:text="Application"
         android:textAlignment="center"
         android:textColor="#545454"
         android:textSize="50dp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/studentNameHolder"
+        android:id="@+id/purposeHolder"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,7 +44,7 @@
         app:boxStrokeColor="#545454">
 
         <EditText
-            android:id="@+id/studentName"
+            android:id="@+id/purpose"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -52,5 +57,39 @@
             android:textColor="#545454"
             android:textColorHint="#545454" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/placeOnLeaveHolder"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/purposeHolder"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:textColorHint="#545454"
+        app:boxCornerRadiusBottomEnd="25dp"
+        app:boxCornerRadiusBottomStart="25dp"
+        app:boxCornerRadiusTopEnd="25dp"
+        app:boxCornerRadiusTopStart="25dp"
+        app:boxStrokeColor="#545454">
+
+        <EditText
+            android:id="@+id/placeOnLeave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/adamina"
+            android:hint="@string/place_on_leave"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#545454"
+            android:textColorHint="#545454" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
 </RelativeLayout>
