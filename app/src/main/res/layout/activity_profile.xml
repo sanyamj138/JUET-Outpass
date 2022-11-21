@@ -26,18 +26,19 @@
         android:textSize="50dp" />
 
     <ScrollView
+        android:id="@+id/profile_list"
         android:layout_width="350dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/pageName"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="75dp">
+        android:layout_marginTop="50dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="25dp"
+            android:orientation="vertical"
             android:paddingTop="25dp"
-            android:orientation="vertical">
+            android:paddingBottom="25dp">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/studentNameHolder"
@@ -299,5 +300,19 @@
 
     </ScrollView>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_list"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#545454"
+        android:fontFamily="@font/adamina"
+        android:text="@string/submit_button"
+        android:textColor="#EAEAEA"
+        app:cornerRadius="20dp"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="10dp"
+        android:textSize="15dp" />
 
 </RelativeLayout>

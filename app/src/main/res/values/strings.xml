@@ -10,4 +10,5 @@
     <string name="student_mobileNumber">Student\'s Mobile Number</string>
     <string name="parent_mobileNumber">Parent\'s Mobile Number</string>
     <string name="home_address">Enter Home Address</string>
+    <string name="submit_button">Submit</string>
 </resources>
