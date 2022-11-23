@@ -12,13 +12,13 @@
         android:layout_height="match_parent"
         android:src="@drawable/ic_final" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/pageName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/adamina"
         android:text="Profile"
         android:textAlignment="center"
@@ -28,9 +28,8 @@
     <ScrollView
         android:id="@+id/profile_list"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/pageName"
-        android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="20dp"
@@ -40,41 +39,42 @@
         android:scrollbarThumbVertical="@null">
 
         <LinearLayout
+            android:id="@+id/linearLayoutProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingTop="25dp"
             android:paddingBottom="25dp">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/studentNameHolder"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:padding="10dp"
-                android:textColorHint="#545454"
-                app:boxCornerRadiusBottomEnd="25dp"
-                app:boxCornerRadiusBottomStart="25dp"
-                app:boxCornerRadiusTopEnd="25dp"
-                app:boxCornerRadiusTopStart="25dp"
-                app:boxStrokeColor="#545454">
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/studentNameHolder"-->
+            <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:textColorHint="#545454"-->
+            <!--                app:boxCornerRadiusBottomEnd="25dp"-->
+            <!--                app:boxCornerRadiusBottomStart="25dp"-->
+            <!--                app:boxCornerRadiusTopEnd="25dp"-->
+            <!--                app:boxCornerRadiusTopStart="25dp"-->
+            <!--                app:boxStrokeColor="#545454">-->
 
-                <EditText
-                    android:id="@+id/studentName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/adamina"
-                    android:hint="@string/student_name"
-                    android:importantForAutofill="no"
-                    android:inputType="text"
-                    android:textAlignment="center"
-                    android:textColor="#545454"
-                    android:textColorHint="#545454" />
-            </com.google.android.material.textfield.TextInputLayout>
+            <!--                <EditText-->
+            <!--                    android:id="@+id/studentName"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerHorizontal="true"-->
+            <!--                    android:layout_centerVertical="true"-->
+            <!--                    android:fontFamily="@font/adamina"-->
+            <!--                    android:hint="@string/student_name"-->
+            <!--                    android:importantForAutofill="no"-->
+            <!--                    android:inputType="text"-->
+            <!--                    android:textAlignment="center"-->
+            <!--                    android:textColor="#545454"-->
+            <!--                    android:textColorHint="#545454" />-->
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/studentBranchHolder"
@@ -166,7 +166,6 @@
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/studentMobileHolder"
@@ -358,7 +357,7 @@
                 android:fontFamily="@font/adamina"
                 android:paddingHorizontal="50dp"
                 android:paddingVertical="15dp"
-                android:text="@string/submit_button"
+                android:text="@string/save_button"
                 android:textColor="#EAEAEA"
                 android:textSize="15dp"
                 app:cornerRadius="20dp" />

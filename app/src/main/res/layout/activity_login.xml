@@ -14,28 +14,27 @@
         android:layout_height="match_parent"
         android:src="@drawable/ic_final" />
 
-
-    <ImageButton
-        android:id="@+id/signInButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/appName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
-        android:background="@drawable/google_button" />
-
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/appName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/adamina"
         android:text="JUET Outpass"
         android:textAlignment="center"
         android:textColor="#545454"
         android:textSize="75dp" />
+
+    <ImageButton
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/google_button" />
 
     <ProgressBar
         android:id="@+id/progressBar"
