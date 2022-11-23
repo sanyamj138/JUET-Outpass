@@ -5,8 +5,8 @@
     <string name="student_branch">Branch of the student</string>
     <string name="student_year">Year of the student</string>
     <string name="student_sem">Semester of the Student</string>
-    <string name="place_on_leave">Place while on Leave</string>
-    <string name="student_purpose">Purpose for Leave</string>
+    <string name="place_on_leave">Place while on leave</string>
+    <string name="student_purpose">Purpose for leave</string>
     <string name="student_mobileNumber">Student\'s Mobile Number</string>
     <string name="parent_mobileNumber">Parent\'s Mobile Number</string>
     <string name="home_address">Enter Home Address</string>
@@ -14,4 +14,7 @@
     <string name="room_number">Enter Room Number</string>
     <string name="bed_number">Enter Bed Number</string>
     <string name="submit_button">Submit</string>
+    <string name="save_button">Save</string>
+    <string name="leave_from">From</string>
+    <string name="leave_to">To</string>
 </resources>

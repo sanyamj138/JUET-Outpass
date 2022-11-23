@@ -14,6 +14,12 @@
         android:theme="@style/Theme.MaterialComponents.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SummaryActivity"
+            android:exported="false" />
+        <activity
             android:name=".ApplicationActivity"
             android:exported="false" />
         <activity
