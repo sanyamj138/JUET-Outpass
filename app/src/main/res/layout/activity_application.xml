@@ -64,7 +64,7 @@
         app:boxCornerRadiusTopStart="25dp"
         app:boxStrokeColor="#545454">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/purpose"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
         app:boxCornerRadiusTopStart="25dp"
         app:boxStrokeColor="#545454">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/placeOnLeave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -108,6 +108,21 @@
             android:textAlignment="center"
             android:textColor="#545454"
             android:textColorHint="#545454" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#545454"
+            android:fontFamily="@font/adamina"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="15dp"
+            android:text="@string/submit_button"
+            android:textColor="#EAEAEA"
+            android:textSize="15dp"
+            app:cornerRadius="20dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -226,5 +241,7 @@
     </LinearLayout>
 
     </ScrollView>
+
+
 
 </RelativeLayout>

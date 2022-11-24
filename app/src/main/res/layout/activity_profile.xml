@@ -91,7 +91,7 @@
                 app:boxCornerRadiusTopStart="25dp"
                 app:boxStrokeColor="#545454">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/studentBranch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
                 app:boxCornerRadiusTopStart="25dp"
                 app:boxStrokeColor="#545454">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/studentYear"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
                 app:boxCornerRadiusTopStart="25dp"
                 app:boxStrokeColor="#545454">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/studentSem"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -182,7 +182,7 @@
                 app:boxCornerRadiusTopStart="25dp"
                 app:boxStrokeColor="#545454">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/studentMobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -191,7 +191,7 @@
                     android:fontFamily="@font/adamina"
                     android:hint="@string/student_mobileNumber"
                     android:importantForAutofill="no"
-                    android:inputType="number"
+                    android:inputType="phone"
                     android:textAlignment="center"
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
@@ -212,7 +212,7 @@
                 app:boxCornerRadiusTopStart="25dp"
                 app:boxStrokeColor="#545454">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/parentMobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -221,7 +221,7 @@
                     android:fontFamily="@font/adamina"
                     android:hint="@string/parent_mobileNumber"
                     android:importantForAutofill="no"
-                    android:inputType="number"
+                    android:inputType="phone"
                     android:textAlignment="center"
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
@@ -242,7 +242,7 @@
                 app:boxCornerRadiusTopStart="25dp"
                 app:boxStrokeColor="#545454">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/homeAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -272,7 +272,7 @@
                 app:boxCornerRadiusTopStart="25dp"
                 app:boxStrokeColor="#545454">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/hostelNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -280,8 +280,8 @@
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/adamina"
                     android:hint="@string/hostel_number"
+                    android:inputType="text"
                     android:importantForAutofill="no"
-                    android:inputType="number"
                     android:textAlignment="center"
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
@@ -302,7 +302,7 @@
                 app:boxCornerRadiusTopStart="25dp"
                 app:boxStrokeColor="#545454">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/roomNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -310,8 +310,8 @@
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/adamina"
                     android:hint="@string/room_number"
+                    android:inputType="text"
                     android:importantForAutofill="no"
-                    android:inputType="number"
                     android:textAlignment="center"
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
@@ -332,7 +332,7 @@
                 app:boxCornerRadiusTopStart="25dp"
                 app:boxStrokeColor="#545454">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/bedNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
