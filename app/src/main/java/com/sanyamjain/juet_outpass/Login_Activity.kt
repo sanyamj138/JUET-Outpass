@@ -1,11 +1,12 @@
 package com.sanyamjain.juet_outpass
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -16,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.sanyamjain.juet_outpass.daos.UserDao
 import com.sanyamjain.juet_outpass.models.User
@@ -26,11 +28,14 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
 
+
 class Login_Activity : AppCompatActivity() {
     private val RC_SIGN_IN: Int = 123
     private val TAG = "SignInActivity Tag"
     private lateinit var googleSignInClient: GoogleSignInClient
     private lateinit var auth: FirebaseAuth
+    private val db = FirebaseFirestore.getInstance()
+    private val usersCollection = db.collection("users")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -92,13 +97,52 @@ class Login_Activity : AppCompatActivity() {
     private fun updateUI(firebaseUser: FirebaseUser?) {
         if(firebaseUser != null) {
             if(firebaseUser.email.toString().endsWith("juetguna.in")){
-                val user = User(firebaseUser.uid, firebaseUser.displayName, firebaseUser.email.toString())
-                val usersDao = UserDao()
-                usersDao.addUser(user)
+                signInButton.visibility=View.GONE
+                Toast.makeText(this,"Logging you In",Toast.LENGTH_SHORT).show()
+                auth = Firebase.auth
+                val currentUser=auth.currentUser!!
+                val doc=usersCollection.document(currentUser.uid)
+                doc.get().addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        val document = task.result
+                        if (document.exists()) {
+                           val i = Intent(this, ProfileActivity::class.java)
+                            startActivity(i)
+                            finish()
+                        } else {
+                            val user = User(
+                                firebaseUser.uid,
+                                firebaseUser.displayName,
+                                firebaseUser.email.toString(),
+                                "",
+                                0,
+                                0,
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                0
+                            )
+                            val usersDao = UserDao()
+                            usersDao.addUser(user)
 
-                val profileActivityIntent = Intent(this, ProfileActivity::class.java)
-                startActivity(profileActivityIntent)
-                finish()
+                            val splashScreenTimeOut = 3500
+                            Handler().postDelayed({
+                                val i = Intent(this, ProfileActivity::class.java)
+                                startActivity(i)
+                                finish()
+                            }, splashScreenTimeOut.toLong())
+                        }
+                    } else {
+                        Log.d(TAG, "Failed with: ", task.exception)
+                    }
+                }
+
+//                val profileActivityIntent = Intent(this, ProfileActivity::class.java)
+//                startActivity(profileActivityIntent)
+//                finish()
+
                 }else{
                 signInButton.visibility = View.VISIBLE
                 progressBar.visibility = View.GONE
