@@ -71,4 +71,5 @@ dependencies {
     //KenBurns
     implementation 'com.flaviofaria:kenburnsview:1.0.7'
 
+    implementation 'com.google.firebase:firebase-firestore:21.5.0'
 }

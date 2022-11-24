@@ -31,8 +31,6 @@ class ProfileActivity : AppCompatActivity() {
         val currentUser=auth.currentUser!!
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
-        val editable: Editable = SpannableStringBuilder(currentUserName)
-        studentName.text=editable
         val docRef = db.collection("users").document(currentUser.uid)
         docRef.get()
             .addOnSuccessListener { document ->
