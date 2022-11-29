@@ -24,8 +24,10 @@ class ApplicationActivity : AppCompatActivity() {
     private lateinit var calendarTo: EditText
     private lateinit var calendarViewFrom: CalendarView
     private lateinit var calendarViewTo: CalendarView
+
     override fun onCreate(savedInstanceState: Bundle?) {
-    calendarFrom = findViewById(R.id.calendarFrom)
+
+        calendarFrom = findViewById(R.id.calendarFrom)
         calendarTo = findViewById(R.id.calendarTo)
         calendarViewFrom = findViewById(R.id.calendarViewFrom)
         calendarViewTo = findViewById(R.id.calendarViewTo)
@@ -49,7 +51,6 @@ class ApplicationActivity : AppCompatActivity() {
                 "Applied")
             val postDao = PostDao()
             postDao.addPost(post)
-            
         }
 
         

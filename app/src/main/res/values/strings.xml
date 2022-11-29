@@ -17,4 +17,7 @@
     <string name="save_button">Save</string>
     <string name="leave_from">From</string>
     <string name="leave_to">To</string>
+    <string name="Profile">Profile</string>
+    <string name="Application">Application</string>
+    <string name="Logout">Logout</string>
 </resources>
