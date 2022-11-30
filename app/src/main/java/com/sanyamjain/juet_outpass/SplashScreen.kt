@@ -39,7 +39,7 @@ class SplashScreen : AppCompatActivity() {
     }
 
     private fun fireSplash() {
-        val splashScreenTimeOut = 3500
+        val splashScreenTimeOut = 2500
         Handler().postDelayed({
             val i = Intent(this, Login_Activity::class.java)
             startActivity(i)

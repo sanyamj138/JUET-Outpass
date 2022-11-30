@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen"
-    android:background="#F5F5F5">
+    android:background="#F2F5F5F5">
 
     <TextView
         android:id="@+id/appName"
@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:fontFamily="@font/adamina"
+        android:fontFamily="@font/dm_serif_display"
         android:text="JUET Outpass"
         android:textAlignment="center"
         android:textColor="#545454"

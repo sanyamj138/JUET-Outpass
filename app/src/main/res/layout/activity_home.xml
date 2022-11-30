@@ -61,8 +61,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/applicationImage"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
         android:layout_marginTop="50dp"
+        android:gravity="center"
         android:orientation="vertical">
 
         <com.google.android.material.button.MaterialButton
