@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetStartedActivity"
+    android:background="#F5F5F5">
+
+    <ImageView
+        android:id="@+id/elipseDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/elipse" />
+
+    <ImageView
+        android:id="@+id/mobileApplication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/mobileapplication" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobileApplication"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-15dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="JUET OUTPASS!"
+        android:textColor="#545454"
+        android:textSize="25sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appName"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inter"
+        android:text="@string/startingMessage"
+        android:textColor="#545454"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/buttonColor"
+        android:fontFamily="@font/inter_extrabold"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="20dp"
+        android:text="@string/startingButton"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:cornerRadius="15dp" />
+
+    <ImageView
+        android:id="@+id/elipseDesignBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/elipseback" />
+
+</RelativeLayout>

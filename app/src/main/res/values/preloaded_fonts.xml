@@ -2,14 +2,18 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/abhaya_libre_semibold</item>
+        <item>@font/abril_fatface</item>
         <item>@font/adamina</item>
         <item>@font/aguafina_script</item>
         <item>@font/alex_brush</item>
         <item>@font/alike_angular</item>
         <item>@font/almendra_display</item>
         <item>@font/amethysta</item>
+        <item>@font/atomic_age</item>
         <item>@font/bangers</item>
         <item>@font/brawler</item>
+        <item>@font/inter</item>
+        <item>@font/inter_extrabold</item>
         <item>@font/lobster</item>
         <item>@font/lobster_two_italic</item>
         <item>@font/playfair_display_sc</item>

@@ -4,34 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".ProfileActivity"
+    android:background="#F5F5F5">
 
-    <com.flaviofaria.kenburnsview.KenBurnsView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/ic_final" />
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/pageName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:fontFamily="@font/adamina"-->
+<!--        android:text="Profile"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#545454"-->
+<!--        android:textSize="50dp" />-->
+
+    <ImageView
+        android:id="@+id/elipseDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/elipse" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/pageName"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/adamina"
-        android:text="Profile"
-        android:textAlignment="center"
+        android:layout_below="@+id/elipseDesign"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="Profile Setup!"
         android:textColor="#545454"
-        android:textSize="50dp" />
+        android:layout_marginTop="-30dp"
+        android:textSize="25sp" />
 
     <ScrollView
         android:id="@+id/profile_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/pageName"
+        android:layout_below="@id/pageName"
         android:layout_centerInParent="true"
-        android:layout_marginTop="50dp"
         android:layout_marginBottom="20dp"
         android:paddingHorizontal="10dp"
         android:scrollIndicators="none"
@@ -81,8 +95,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
                 android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
@@ -112,8 +126,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
                 android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
@@ -142,8 +156,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
                 android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
@@ -172,8 +186,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
                 android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
@@ -202,8 +216,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
                 android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
@@ -232,8 +246,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
                 android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
@@ -262,8 +276,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
                 android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
@@ -280,8 +294,8 @@
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/adamina"
                     android:hint="@string/hostel_number"
-                    android:inputType="text"
                     android:importantForAutofill="no"
+                    android:inputType="text"
                     android:textAlignment="center"
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
@@ -292,8 +306,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
                 android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
@@ -310,8 +324,8 @@
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/adamina"
                     android:hint="@string/room_number"
-                    android:inputType="text"
                     android:importantForAutofill="no"
+                    android:inputType="text"
                     android:textAlignment="center"
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
@@ -322,8 +336,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
                 android:padding="10dp"
                 android:textColorHint="#545454"
                 app:boxCornerRadiusBottomEnd="25dp"
@@ -353,8 +367,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
-                android:backgroundTint="#545454"
-                android:fontFamily="@font/adamina"
+                android:backgroundTint="#6C63FF"
+                android:fontFamily="@font/inter_extrabold"
                 android:paddingHorizontal="50dp"
                 android:paddingVertical="15dp"
                 android:text="@string/save_button"
@@ -365,5 +379,13 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/elipseDesignBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/elipseback" />
 
 </RelativeLayout>

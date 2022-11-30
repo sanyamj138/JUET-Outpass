@@ -20,4 +20,7 @@
     <string name="Profile">Profile</string>
     <string name="Application">Application</string>
     <string name="Logout">Logout</string>
+    <string name="startingMessage">Outpass at your fingertips.</string>
+    <string name="startingButton">Get Started</string>
+    <string name="loginMessage">Let’s help you to get an Outpass at your figertips.</string>
 </resources>

@@ -4,72 +4,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F5F5"
     tools:context=".HomeActivity">
 
-    <com.flaviofaria.kenburnsview.KenBurnsView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/ic_final" />
+<!--    <com.flaviofaria.kenburnsview.KenBurnsView-->
+<!--        android:id="@+id/image"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/ic_final" />-->
+
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/pageName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:fontFamily="@font/adamina"-->
+<!--        android:text="Home"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#545454"-->
+<!--        android:textSize="50dp" />-->
+
+    <ImageView
+        android:id="@+id/elipseDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/elipse" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/pageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/elipseDesign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="Dashboard!"
+        android:textColor="#545454"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/applicationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@id/pageName"
+        android:layout_centerInParent="true"
+        android:src="@drawable/application" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/applicationImage"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/adamina"
-        android:text="Home"
-        android:textAlignment="center"
-        android:textColor="#545454"
-        android:textSize="50dp" />
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/profileButton"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="#6C63FF"
+            android:fontFamily="@font/inter_extrabold"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="15dp"
+            android:text="@string/Profile"
+            android:textColor="#EAEAEA"
+            android:textSize="15dp"
+            app:cornerRadius="20dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/applicationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileButton"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#6C63FF"
+            android:fontFamily="@font/inter_extrabold"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="15dp"
+            android:text="@string/Application"
+            android:textColor="#EAEAEA"
+            android:textSize="15dp"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applicationButton"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#6C63FF"
+            android:fontFamily="@font/inter_extrabold"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="15dp"
+            android:text="@string/Logout"
+            android:textColor="#EAEAEA"
+            android:textSize="15dp"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/elipseDesignBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="#545454"
-        android:fontFamily="@font/brawler"
-        android:paddingHorizontal="50dp"
-        android:paddingVertical="15dp"
-        android:text="@string/Profile"
-        android:textColor="#EAEAEA"
-        android:textSize="25dp"
-        app:cornerRadius="20dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/applicationButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/profileButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="#545454"
-        android:fontFamily="@font/brawler"
-        android:paddingHorizontal="50dp"
-        android:paddingVertical="15dp"
-        android:text="@string/Application"
-        android:textColor="#EAEAEA"
-        android:textSize="25dp"
-        app:cornerRadius="20dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/logoutButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/applicationButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="#545454"
-        android:fontFamily="@font/brawler"
-        android:paddingHorizontal="50dp"
-        android:paddingVertical="15dp"
-        android:text="@string/Logout"
-        android:textColor="#EAEAEA"
-        android:textSize="25dp"
-        app:cornerRadius="20dp" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/elipseback" />
 
 </RelativeLayout>

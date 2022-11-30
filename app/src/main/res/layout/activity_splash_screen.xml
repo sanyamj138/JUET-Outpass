@@ -4,13 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen">
-
-    <com.flaviofaria.kenburnsview.KenBurnsView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/ic_final" />
+    tools:context=".SplashScreen"
+    android:background="#F5F5F5">
 
     <TextView
         android:id="@+id/appName"
@@ -27,8 +22,8 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/startingAnim"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/appName"
         android:layout_centerInParent="true"
         android:layout_marginTop="150dp"

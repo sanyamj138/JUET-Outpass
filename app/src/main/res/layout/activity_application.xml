@@ -4,229 +4,246 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F5F5"
     tools:context=".ApplicationActivity">
 
-    <com.flaviofaria.kenburnsview.KenBurnsView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/ic_final" />
+    <ImageView
+        android:id="@+id/elipseDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/elipse" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/applicationName"
-        android:layout_width="match_parent"
+        android:id="@+id/pageName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/elipseDesign"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/adamina"
-        android:text="Application"
-        android:textAlignment="center"
+        android:layout_marginTop="-30dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="Application!"
         android:textColor="#545454"
-        android:textSize="50sp" />
+        android:textSize="25sp" />
 
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/applicationName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:fontFamily="@font/adamina"-->
+<!--        android:text="Application"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#545454"-->
+<!--        android:textSize="50sp" />-->
 
     <ScrollView
         android:id="@+id/profile_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/applicationName"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/pageName"
+        android:layout_marginBottom="10dp"
         android:paddingHorizontal="10dp"
         android:scrollIndicators="none"
         android:scrollbarThumbHorizontal="@null"
         android:scrollbarThumbVertical="@null">
 
-    <LinearLayout
-        android:id="@+id/linearLayoutProfile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="25dp"
-        android:paddingBottom="25dp">
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/purposeHolder"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/applicationName"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="20dp"
-        android:padding="10dp"
-        android:textColorHint="#545454"
-        app:boxCornerRadiusBottomEnd="25dp"
-        app:boxCornerRadiusBottomStart="25dp"
-        app:boxCornerRadiusTopEnd="25dp"
-        app:boxCornerRadiusTopStart="25dp"
-        app:boxStrokeColor="#545454">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/purpose"
+        <LinearLayout
+            android:id="@+id/linearLayoutProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:fontFamily="@font/adamina"
-            android:hint="@string/student_purpose"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:textAlignment="center"
-            android:textColor="#545454"
-            android:textColorHint="#545454" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:orientation="vertical"
+            android:paddingBottom="25dp">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/placeOnLeaveHolder"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/purposeHolder"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:padding="10dp"
-        android:textColorHint="#545454"
-        app:boxCornerRadiusBottomEnd="25dp"
-        app:boxCornerRadiusBottomStart="25dp"
-        app:boxCornerRadiusTopEnd="25dp"
-        app:boxCornerRadiusTopStart="25dp"
-        app:boxStrokeColor="#545454">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/placeOnLeave"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:fontFamily="@font/adamina"
-            android:hint="@string/place_on_leave"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:textAlignment="center"
-            android:textColor="#545454"
-            android:textColorHint="#545454" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/calendarFromHolder"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/placeOnLeaveHolder"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:padding="10dp"
-        android:textColorHint="#545454"
-        app:boxCornerRadiusBottomEnd="25dp"
-        app:boxCornerRadiusBottomStart="25dp"
-        app:boxCornerRadiusTopEnd="25dp"
-        app:boxCornerRadiusTopStart="25dp"
-        app:boxStrokeColor="#545454">
-
-        <EditText
-            android:id="@+id/calendarFrom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:fontFamily="@font/adamina"
-            android:hint="@string/leave_from"
-            android:importantForAutofill="no"
-            android:inputType="date"
-            android:textAlignment="center"
-            android:textColor="#545454"
-            android:textColorHint="#545454" />
-
-        <CalendarView
-            android:id="@+id/calendarViewFrom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:visibility="gone"
-            android:layout_weight="1"
-            android:background="@drawable/editcalender" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/calendarToHolder"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/placeOnLeaveHolder"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:padding="10dp"
-            android:textColorHint="#545454"
-            app:boxCornerRadiusBottomEnd="25dp"
-            app:boxCornerRadiusBottomStart="25dp"
-            app:boxCornerRadiusTopEnd="25dp"
-            app:boxCornerRadiusTopStart="25dp"
-            app:boxStrokeColor="#545454">
-
-            <EditText
-                android:id="@+id/calendarTo"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/purposeHolder"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:fontFamily="@font/adamina"
-                android:hint="@string/leave_to"
-                android:importantForAutofill="no"
-                android:inputType="date"
-                android:textAlignment="center"
-                android:textColor="#545454"
-                android:textColorHint="#545454" />
+                android:layout_below="@+id/applicationName"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:textColorHint="#545454"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxStrokeColor="#545454">
 
-            <CalendarView
-                android:id="@+id/calendarViewTo"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/purpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/adamina"
+                    android:hint="@string/student_purpose"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColor="#545454"
+                    android:textColorHint="#545454" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/placeOnLeaveHolder"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/purposeHolder"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:textColorHint="#545454"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxStrokeColor="#545454">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/placeOnLeave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/adamina"
+                    android:hint="@string/place_on_leave"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColor="#545454"
+                    android:textColorHint="#545454" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/calendarFromHolder"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/placeOnLeaveHolder"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:textColorHint="#545454"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxStrokeColor="#545454">
+
+                <EditText
+                    android:id="@+id/calendarFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/adamina"
+                    android:hint="@string/leave_from"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    android:textAlignment="center"
+                    android:textColor="#545454"
+                    android:textColorHint="#545454" />
+
+                <CalendarView
+                    android:id="@+id/calendarViewFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/editcalender"
+                    android:visibility="gone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/calendarToHolder"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/placeOnLeaveHolder"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:textColorHint="#545454"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxStrokeColor="#545454">
+
+                <EditText
+                    android:id="@+id/calendarTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/adamina"
+                    android:hint="@string/leave_to"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    android:textAlignment="center"
+                    android:textColor="#545454"
+                    android:textColorHint="#545454" />
+
+                <CalendarView
+                    android:id="@+id/calendarViewTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/editcalender"
+                    android:visibility="gone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submitButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:visibility="gone"
-                android:layout_weight="1"
-                android:background="@drawable/editcalender" />
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#6C63FF"
+                android:fontFamily="@font/inter_extrabold"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="15dp"
+                android:text="@string/submit_button"
+                android:textColor="#EAEAEA"
+                android:textSize="15dp"
+                app:cornerRadius="20dp" />
 
-        </com.google.android.material.textfield.TextInputLayout>
+            <!--        <com.google.android.material.button.MaterialButton-->
+            <!--            android:id="@+id/submitButton"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_alignParentBottom="true"-->
+            <!--            android:layout_centerHorizontal="true"-->
+            <!--            android:layout_centerVertical="true"-->
+            <!--            android:layout_marginBottom="30dp"-->
+            <!--            android:backgroundTint="#545454"-->
+            <!--            android:fontFamily="@font/adamina"-->
+            <!--            android:paddingVertical="15dp"-->
+            <!--            android:text="@string/submit_button"-->
+            <!--            android:textColor="#EAEAEA"-->
+            <!--            android:textSize="15dp"-->
+            <!--            app:cornerRadius="20dp" />-->
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/submitButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="25dp"
-            android:backgroundTint="#545454"
-            android:fontFamily="@font/adamina"
-            android:paddingHorizontal="50dp"
-            android:paddingVertical="15dp"
-            android:text="@string/submit_button"
-            android:textColor="#EAEAEA"
-            android:textSize="15dp"
-            app:cornerRadius="20dp" />
-
-<!--        <com.google.android.material.button.MaterialButton-->
-<!--            android:id="@+id/submitButton"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentBottom="true"-->
-<!--            android:layout_centerHorizontal="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:layout_marginBottom="30dp"-->
-<!--            android:backgroundTint="#545454"-->
-<!--            android:fontFamily="@font/adamina"-->
-<!--            android:paddingVertical="15dp"-->
-<!--            android:text="@string/submit_button"-->
-<!--            android:textColor="#EAEAEA"-->
-<!--            android:textSize="15dp"-->
-<!--            app:cornerRadius="20dp" />-->
-
-    </LinearLayout>
+        </LinearLayout>
 
     </ScrollView>
 
-
+    <ImageView
+        android:id="@+id/elipseDesignBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/elipseback" />
 
 </RelativeLayout>

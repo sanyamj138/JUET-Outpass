@@ -6,26 +6,61 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:focusableInTouchMode="true"
+    android:background="#F5F5F5"
     tools:context=".Login_Activity">
 
-    <com.flaviofaria.kenburnsview.KenBurnsView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/ic_final" />
+    <ImageView
+        android:id="@+id/elipseDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/elipse" />
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/login" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/appName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:id="@+id/message1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@id/loginImage"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/adamina"
-        android:text="JUET Outpass"
-        android:textAlignment="center"
+        android:fontFamily="@font/inter"
+        android:text="@string/loginMessage"
         android:textColor="#545454"
-        android:textSize="75dp" />
+        android:textSize="15sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginImage"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="Welcome Onboard!"
+        android:textColor="#545454"
+        android:textSize="25sp" />
+
+
+
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/appName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:fontFamily="@font/adamina"-->
+<!--        android:text="JUET Outpass"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#545454"-->
+<!--        android:textSize="75dp" />-->
 
     <ImageButton
         android:id="@+id/signInButton"
@@ -33,8 +68,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/google_button" />
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/googlebutton" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -44,6 +79,14 @@
         android:visibility="gone"
         android:indeterminateDrawable="@drawable/progress_bg" />
 
+
+    <ImageView
+        android:id="@+id/elipseDesignBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/elipseback" />
 
     <!--    <com.google.android.gms.common.SignInButton-->
     <!--        android:id="@+id/signInButton"-->
