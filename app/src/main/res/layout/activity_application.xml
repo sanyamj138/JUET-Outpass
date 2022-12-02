@@ -27,19 +27,6 @@
         android:textColor="#545454"
         android:textSize="25sp" />
 
-<!--    <com.google.android.material.textview.MaterialTextView-->
-<!--        android:id="@+id/applicationName"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginTop="30dp"-->
-<!--        android:fontFamily="@font/adamina"-->
-<!--        android:text="Application"-->
-<!--        android:textAlignment="center"-->
-<!--        android:textColor="#545454"-->
-<!--        android:textSize="50sp" />-->
-
     <ScrollView
         android:id="@+id/profile_list"
         android:layout_width="match_parent"

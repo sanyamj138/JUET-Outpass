@@ -27,8 +27,10 @@
         <entry key="app/src/main/res/layout-night/activity_login.xml" value="0.2609805924412666" />
         <entry key="app/src/main/res/layout-night/activity_splash_screen.xml" value="0.2609805924412666" />
         <entry key="app/src/main/res/layout/activity_application.xml" value="0.1773101806640625" />
+        <entry key="app/src/main/res/layout/activity_faculty_profile.xml" value="0.24947916666666667" />
         <entry key="app/src/main/res/layout/activity_get_started.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.16399993896484377" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2127426147460938" />
+        <entry key="app/src/main/res/layout/activity_home_faculty.xml" value="0.22148742675781252" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2609805924412666" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.165" />
