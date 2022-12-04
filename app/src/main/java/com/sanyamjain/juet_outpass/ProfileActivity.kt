@@ -52,6 +52,8 @@ class ProfileActivity : AppCompatActivity() {
                     studentMobile.text=editableStudentMobile
                     val editableParentMobile = SpannableStringBuilder(u!!.parentNumber.toString())
                     parentMobile.text=editableParentMobile
+                    val editableParentEmail=SpannableStringBuilder(u!!.parentEmail)
+                    parentEmail.text=editableParentEmail
                     val editableBed = SpannableStringBuilder(u!!.bedNo.toString())
                     bedNumber.text=editableBed
                 } else {
@@ -75,10 +77,12 @@ class ProfileActivity : AppCompatActivity() {
                     doc.update("sem",studentSem!!.text.toString().toInt())
                     doc.update("studentNumber",studentMobile!!.text.toString())
                     doc.update("parentNumber",parentMobile!!.text.toString())
+                    doc.update("parentEmail",parentEmail!!.text.toString())
                     doc.update("bedNo",bedNumber!!.text.toString().toInt())
                 }
-                val intent = Intent(this, ApplicationActivity::class.java)
+                val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
+                finish()
             }
         }
 

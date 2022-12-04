@@ -124,7 +124,7 @@
                 app:boxCornerRadiusTopStart="25dp"
                 app:boxStrokeColor="#545454">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/calendarFrom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -138,14 +138,7 @@
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
 
-                <CalendarView
-                    android:id="@+id/calendarViewFrom"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/editcalender"
-                    android:visibility="gone" />
+
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -165,7 +158,7 @@
                 app:boxCornerRadiusTopStart="25dp"
                 app:boxStrokeColor="#545454">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/calendarTo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -179,14 +172,7 @@
                     android:textColor="#545454"
                     android:textColorHint="#545454" />
 
-                <CalendarView
-                    android:id="@+id/calendarViewTo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/editcalender"
-                    android:visibility="gone" />
+
 
             </com.google.android.material.textfield.TextInputLayout>
 

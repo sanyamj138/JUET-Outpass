@@ -9,6 +9,7 @@ data class User(
     val sem : Int = 0,
     val studentNumber : String="",
     val parentNumber: String="",
+    val parentEmail:String="",
     val homeAddress : String = "",
     val hostel : String = "",
     val roomNo : String = "",

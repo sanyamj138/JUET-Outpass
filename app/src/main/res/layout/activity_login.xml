@@ -47,6 +47,17 @@
         android:textColor="#545454"
         android:textSize="25sp" />
 
+    <EditText
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:hint="Enter ID Type"
+        android:textColorHint="@color/black"
+        />
+
     <ImageButton
         android:id="@+id/signInButton"
         android:layout_width="wrap_content"

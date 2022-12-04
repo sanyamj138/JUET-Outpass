@@ -25,4 +25,5 @@
     <string name="startingMessage">Outpass at your fingertips.</string>
     <string name="startingButton">Get Started</string>
     <string name="loginMessage">Let’s help you to get an Outpass at your figertips.</string>
+    <string name="parent_s_email_id">Parent\'s Email ID</string>
 </resources>

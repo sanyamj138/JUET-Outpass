@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.os.Handler
 import android.util.Log
 import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -29,13 +32,14 @@ import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
 
 
-class Login_Activity : AppCompatActivity() {
+class Login_Activity : AppCompatActivity(){
     private val RC_SIGN_IN: Int = 123
     private val TAG = "SignInActivity Tag"
     private lateinit var googleSignInClient: GoogleSignInClient
     private lateinit var auth: FirebaseAuth
     private val db = FirebaseFirestore.getInstance()
     private val usersCollection = db.collection("users")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -48,9 +52,21 @@ class Login_Activity : AppCompatActivity() {
         auth = Firebase.auth
 
         signInButton.setOnClickListener {
+            val a=spinner.text.toString()
+            if(a=="Student")
             signIn()
-       }
+            if(a=="Warden") {
+                // TODO:Implement warden login
+            }
+            if(a=="Supre"){
+                // TODO: Implement supre login
+            }
+            if(a=="Parent"){
+                //TODO: Implement parent login
+            }
+        }
     }
+
     override fun onStart() {
         super.onStart()
         val currentUser = auth.currentUser
@@ -98,7 +114,6 @@ class Login_Activity : AppCompatActivity() {
         if(firebaseUser != null) {
             if(firebaseUser.email.toString().endsWith("juetguna.in")){
                 signInButton.visibility=View.GONE
-                Toast.makeText(this,"Logging you In",Toast.LENGTH_SHORT).show()
                 auth = Firebase.auth
                 val currentUser=auth.currentUser!!
                 val doc=usersCollection.document(currentUser.uid)
@@ -106,7 +121,7 @@ class Login_Activity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         val document = task.result
                         if (document.exists()) {
-                           val i = Intent(this, ProfileActivity::class.java)
+                           val i = Intent(this, HomeActivity::class.java)
                             startActivity(i)
                             finish()
                         } else {
@@ -122,17 +137,15 @@ class Login_Activity : AppCompatActivity() {
                                 "",
                                 "",
                                 "",
+                                "",
                                 0
                             )
                             val usersDao = UserDao()
                             usersDao.addUser(user)
 
-                            val splashScreenTimeOut = 3500
-                            Handler().postDelayed({
-                                val i = Intent(this, ProfileActivity::class.java)
-                                startActivity(i)
-                                finish()
-                            }, splashScreenTimeOut.toLong())
+                            val i = Intent(this,HomeActivity::class.java)
+                            startActivity(i)
+                            finish()
                         }
                     } else {
                         Log.d(TAG, "Failed with: ", task.exception)

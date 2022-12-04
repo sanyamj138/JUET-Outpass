@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:scrollbars="vertical"
+    app:cardCornerRadius="20dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fromDate"
+            android:text="From :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/fromValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/fromDate"
+            android:text="From Date"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/toDate"
+            android:text="To :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/fromDate"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/toValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/fromValue"
+            app:layout_constraintLeft_toRightOf="@id/toDate"
+            android:text="To Date"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/purpose"
+            android:text="Purpose :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/toDate"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/purposeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/toValue"
+            app:layout_constraintLeft_toRightOf="@id/purpose"
+            android:text="Purpose"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/placeToVisit"
+            android:text="Place on Leave"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/purpose"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/placeToVisitValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/purposeValue"
+            app:layout_constraintLeft_toRightOf="@id/placeToVisit"
+            android:text="Place on Leave"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:text="Status :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/placeToVisit"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/statusValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/placeToVisitValue"
+            app:layout_constraintLeft_toRightOf="@id/status"
+            android:text="Status"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
