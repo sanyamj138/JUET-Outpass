@@ -1,0 +1,59 @@
+package com.sanyamjain.juet_outpass
+
+import android.content.ContentValues
+import android.text.SpannableStringBuilder
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.firebase.ui.firestore.FirestoreRecyclerAdapter
+import com.firebase.ui.firestore.FirestoreRecyclerOptions
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.toObject
+import com.sanyamjain.juet_outpass.models.Post
+import com.sanyamjain.juet_outpass.models.User
+import kotlinx.android.synthetic.main.activity_profile.*
+
+class WardenPreviousAdapter(options: FirestoreRecyclerOptions<Post>) :
+    FirestoreRecyclerAdapter<Post, WardenPreviousAdapter.PostViewHolder>(
+    options
+) {
+    class PostViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+        val name:TextView=itemView.findViewById(R.id.NameValue)
+        val enroll:TextView=itemView.findViewById(R.id.enrollValue)
+        val from: TextView =itemView.findViewById(R.id.fromValue)
+        val to: TextView =itemView.findViewById(R.id.toValue)
+        val purpose: TextView =itemView.findViewById(R.id.purposeValue)
+        val placeToVisit: TextView =itemView.findViewById(R.id.placeToVisitValue)
+        val status: TextView =itemView.findViewById(R.id.statusValue)
+    }
+
+    override fun onBindViewHolder(holder: PostViewHolder, position: Int, model: Post) {
+        val db = FirebaseFirestore.getInstance()
+        val docRef = db.collection("users").document(model.userID)
+        docRef.get()
+            .addOnSuccessListener { document ->
+                if (document != null) {
+                    val u = document.toObject<User>()
+                    holder.name.text=u!!.displayName
+                    holder.enroll.text=u!!.email.subSequence(0,7)
+                } else {
+                    Log.d(ContentValues.TAG, "No such document")
+                }
+            }
+            .addOnFailureListener { exception ->
+                Log.d(ContentValues.TAG, "get failed with ", exception)
+            }
+        holder.from.text=model.from
+        holder.to.text=model.to
+        holder.placeToVisit.text=model.placeOnLeave
+        holder.purpose.text=model.purpose
+        holder.status.text=model.status
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostViewHolder {
+        return PostViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.warden_previous_layout,parent,false))
+    }
+}

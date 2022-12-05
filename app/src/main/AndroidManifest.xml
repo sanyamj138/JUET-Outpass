@@ -14,6 +14,30 @@
         android:theme="@style/Theme.MaterialComponents.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".ParentPreviousActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParentCurrentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParentHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SupreCurrentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuprePreviousActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SupreHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WardenCurrentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WardenPreviousActivity"
+            android:exported="false" />
+        <activity
             android:name=".PreviousApplicationActivity"
             android:exported="false" />
         <activity

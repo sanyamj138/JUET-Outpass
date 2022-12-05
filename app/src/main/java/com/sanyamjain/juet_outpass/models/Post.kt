@@ -6,6 +6,6 @@ data class Post(
     val userID:String="",
     val purpose:String="",
     val placeOnLeave:String="",
-    val status:String="",
+    var status:String="",
     val createdAt: Long = 0L
 )

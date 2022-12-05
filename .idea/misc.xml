@@ -5,13 +5,25 @@
       <map>
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/drawable/ic_background_dark.xml" value="0.1" />
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_application.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_faculty_profile.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_home.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_home_faculty.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_login.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_main.xml" value="0.16145833333333334" />
+        <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_parent_current.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_parent_home.xml" value="0.16145833333333334" />
+        <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_parent_previous.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_previous_application.xml" value="0.17135416666666667" />
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_profile.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_splash_screen.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_supre_current.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_supre_home.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_supre_previous.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_warden_current.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/activity_warden_previous.xml" value="0.16145833333333334" />
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/previous_application_layout.xml" value="0.1703125" />
+        <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/warden_current_layout.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/warden_previous_layout.xml" value="0.17447916666666666" />
         <entry key="app/src/main/res/drawable/edittextcorner.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/ic_background_dark.xml" value="0.173" />
         <entry key="app/src/main/res/drawable/ic_background_light.xml" value="0.2035" />

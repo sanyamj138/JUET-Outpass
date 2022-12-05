@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5"
-    tools:context=".HomeActivityFaculty">
+    tools:context=".SupreHomeActivity">
 
     <ImageView
         android:id="@+id/elipseDesign"
@@ -94,20 +94,6 @@
                 android:textSize="15dp"
                 app:cornerRadius="20dp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/profileButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/applicationButton"
-                android:layout_marginVertical="10dp"
-                android:backgroundTint="#6C63FF"
-                android:fontFamily="@font/inter_extrabold"
-                android:paddingHorizontal="50dp"
-                android:paddingVertical="20dp"
-                android:text="@string/Profile"
-                android:textColor="#EAEAEA"
-                android:textSize="15dp"
-                app:cornerRadius="20dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/lgoutButton"

@@ -21,9 +21,12 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 import com.sanyamjain.juet_outpass.daos.UserDao
+import com.sanyamjain.juet_outpass.daos.WardenDao
 import com.sanyamjain.juet_outpass.models.User
+import com.sanyamjain.juet_outpass.models.Warden
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -52,18 +55,7 @@ class Login_Activity : AppCompatActivity(){
         auth = Firebase.auth
 
         signInButton.setOnClickListener {
-            val a=spinner.text.toString()
-            if(a=="Student")
-            signIn()
-            if(a=="Warden") {
-                // TODO:Implement warden login
-            }
-            if(a=="Supre"){
-                // TODO: Implement supre login
-            }
-            if(a=="Parent"){
-                //TODO: Implement parent login
-            }
+           signIn()
         }
     }
 
@@ -111,62 +103,180 @@ class Login_Activity : AppCompatActivity(){
 
     }
     private fun updateUI(firebaseUser: FirebaseUser?) {
-        if(firebaseUser != null) {
-            if(firebaseUser.email.toString().endsWith("juetguna.in")){
-                signInButton.visibility=View.GONE
-                auth = Firebase.auth
-                val currentUser=auth.currentUser!!
-                val doc=usersCollection.document(currentUser.uid)
-                doc.get().addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        val document = task.result
-                        if (document.exists()) {
-                           val i = Intent(this, HomeActivity::class.java)
-                            startActivity(i)
-                            finish()
-                        } else {
-                            val user = User(
-                                firebaseUser.uid,
-                                firebaseUser.displayName,
-                                firebaseUser.email.toString(),
-                                "",
-                                0,
-                                0,
-                                "",
-                                "",
-                                "",
-                                "",
-                                "",
-                                "",
-                                0
-                            )
-                            val usersDao = UserDao()
-                            usersDao.addUser(user)
+        val a=spinner.text.toString()
+        if(a=="Student"){
+            if(firebaseUser != null) {
+                if(firebaseUser.email.toString().endsWith("juetguna.in")&& firebaseUser.email.toString().startsWith("1") || firebaseUser.email.toString().startsWith("2") || firebaseUser.email.toString().startsWith("3")){
+                    signInButton.visibility=View.GONE
+                    auth = Firebase.auth
+                    val currentUser=auth.currentUser!!
+                    val doc=usersCollection.document(currentUser.uid)
+                    doc.get().addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            val document = task.result
+                            if (document.exists()) {
+                                val i = Intent(this, HomeActivity::class.java)
+                                startActivity(i)
+                                finish()
+                            } else {
+                                val user = User(
+                                    firebaseUser.uid,
+                                    firebaseUser.displayName,
+                                    firebaseUser.email.toString(),
+                                    "",
+                                    0,
+                                    0,
+                                    "",
+                                    "",
+                                    "",
+                                    "",
+                                    "",
+                                    "",
+                                    0
+                                )
+                                val usersDao = UserDao()
+                                usersDao.addUser(user)
 
-                            val i = Intent(this,HomeActivity::class.java)
-                            startActivity(i)
-                            finish()
+                                val i = Intent(this,HomeActivity::class.java)
+                                startActivity(i)
+                                finish()
+                            }
+                        } else {
+                            Log.d(TAG, "Failed with: ", task.exception)
                         }
-                    } else {
-                        Log.d(TAG, "Failed with: ", task.exception)
                     }
-                }
 
 //                val profileActivityIntent = Intent(this, ProfileActivity::class.java)
 //                startActivity(profileActivityIntent)
 //                finish()
 
                 }else{
+                    signInButton.visibility = View.VISIBLE
+                    progressBar.visibility = View.GONE
+                    Firebase.auth.signOut()
+                    googleSignInClient.revokeAccess()
+                    Toast.makeText(this,"Sign In with JUET account",Toast.LENGTH_LONG).show()
+                }
+
+            } else {
                 signInButton.visibility = View.VISIBLE
                 progressBar.visibility = View.GONE
-                    Firebase.auth.signOut()
-                googleSignInClient.revokeAccess()
-                Toast.makeText(this,"Sign In with JUET account",Toast.LENGTH_LONG).show()
             }
+        }else
+            if(a=="Warden") {
+            if(firebaseUser != null) {
+                if(firebaseUser.email.toString().endsWith("juetguna.in") /*&& !firebaseUser.email.toString().startsWith("1") && !firebaseUser.email.toString().startsWith("2")&& !firebaseUser.email.toString().startsWith("3")*/){
+                    signInButton.visibility=View.GONE
+                    auth = Firebase.auth
+                    val currentUser=auth.currentUser!!
+                    val doc=db.collection("wardens").document(currentUser.uid)
+                    doc.get().addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            val document = task.result
+                            if (document.exists()) {
+                                val i = Intent(this, HomeActivityFaculty::class.java)
+                                startActivity(i)
+                                finish()
+                            } else {
+                                val warden = Warden(
+                                    firebaseUser.uid,
+                                    firebaseUser.displayName,
+                                    firebaseUser.email.toString(),
+                                    "","",""
+                                )
+                                val wardenDao = WardenDao()
+                                wardenDao.addWarden(warden)
 
-        } else {
+                                val i = Intent(this,HomeActivityFaculty::class.java)
+                                startActivity(i)
+                                finish()
+                            }
+                        } else {
+                            Log.d(TAG, "Failed with: ", task.exception)
+                        }
+                    }
+
+//                val profileActivityIntent = Intent(this, ProfileActivity::class.java)
+//                startActivity(profileActivityIntent)
+//                finish()
+
+                }else{
+                    signInButton.visibility = View.VISIBLE
+                    progressBar.visibility = View.GONE
+                    Firebase.auth.signOut()
+                    googleSignInClient.revokeAccess()
+                    Toast.makeText(this,"Wrong Account",Toast.LENGTH_LONG).show()
+                }
+
+            } else {
+                signInButton.visibility = View.VISIBLE
+                progressBar.visibility = View.GONE
+            }
+        }
+        else
+            if(a=="Supre"){
+                if(firebaseUser != null) {
+                    auth=Firebase.auth
+                    db.collection("wardens").whereEqualTo("superintendentID", auth.currentUser!!.email)
+                        .get()
+                        .addOnSuccessListener{ documents->
+                            if(documents.isEmpty){
+                                signInButton.visibility = View.VISIBLE
+                                progressBar.visibility = View.GONE
+                                Firebase.auth.signOut()
+                                googleSignInClient.revokeAccess()
+                                Toast.makeText(this,"Enter with a valid account",Toast.LENGTH_SHORT).show()
+                            }else{
+                                for(document in documents){
+                                val u = document.toObject<Warden>()
+                                val intent = Intent(this, SupreHomeActivity::class.java)
+                                intent.putExtra("Year",u.year)
+                                startActivity(intent)
+                                finish()
+                                }
+
+                            }
+                        }
+                } else {
+                    signInButton.visibility = View.VISIBLE
+                    progressBar.visibility = View.GONE
+                }
+
+        }else
+            if(a=="Parent"){
+                if(firebaseUser != null) {
+                    auth=Firebase.auth
+                    db.collection("users").whereEqualTo("parentEmail", auth.currentUser!!.email)
+                        .get()
+                        .addOnSuccessListener{ documents->
+                            if(documents.isEmpty){
+                                signInButton.visibility = View.VISIBLE
+                                progressBar.visibility = View.GONE
+                                Firebase.auth.signOut()
+                                googleSignInClient.revokeAccess()
+                                Toast.makeText(this,"Enter with a valid account",Toast.LENGTH_SHORT).show()
+                            }else{
+                                for(document in documents){
+                                    val u = document.toObject<User>()
+                                    val intent = Intent(this, ParentHomeActivity::class.java)
+                                    intent.putExtra("UID",u.uid)
+                                    startActivity(intent)
+                                    finish()
+                                }
+
+                            }
+                        }
+                } else {
+                    signInButton.visibility = View.VISIBLE
+                    progressBar.visibility = View.GONE
+                }
+        }else{
             signInButton.visibility = View.VISIBLE
             progressBar.visibility = View.GONE
+            Firebase.auth.signOut()
+            googleSignInClient.revokeAccess()
+            Toast.makeText(this,"Select Account Type",Toast.LENGTH_LONG).show()
         }
+
     }
 }

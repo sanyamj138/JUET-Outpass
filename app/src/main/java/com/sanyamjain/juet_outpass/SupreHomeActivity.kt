@@ -9,28 +9,24 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.activity_home.profileButton
 import kotlinx.android.synthetic.main.activity_home_faculty.*
 
-class HomeActivityFaculty : AppCompatActivity() {
+class SupreHomeActivity : AppCompatActivity() {
     private lateinit var googleSignInClient: GoogleSignInClient
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home_faculty)
-
-        profileButton.setOnClickListener {
-            val intent = Intent(this, FacultyProfileActivity::class.java)
-            startActivity(intent)
-        }
+        setContentView(R.layout.activity_supre_home)
+        val s=intent.getStringExtra("Year")
 
         previousApplications.setOnClickListener {
-            val intent = Intent(this, WardenPreviousActivity::class.java)
+            val intent = Intent(this, SuprePreviousActivity::class.java)
+            intent.putExtra("Year",s)
             startActivity(intent)
         }
         currentApplications.setOnClickListener {
-            val intent = Intent(this, WardenCurrentActivity::class.java)
+            val intent = Intent(this, SupreCurrentActivity::class.java)
+            intent.putExtra("Year",s)
             startActivity(intent)
         }
         lgoutButton.setOnClickListener {

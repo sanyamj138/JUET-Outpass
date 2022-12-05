@@ -49,7 +49,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/studentBranchHolder"
+                android:id="@+id/superintendentName"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,13 +64,13 @@
                 app:boxStrokeColor="#545454">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/studentBranch"
+                    android:id="@+id/superintendentNameValue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/adamina"
-                    android:hint="@string/student_branch"
+                    android:hint="Superintendent Name"
                     android:importantForAutofill="no"
                     android:inputType="textEmailAddress"
                     android:textAlignment="center"
@@ -80,7 +80,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/studentYearHolder"
+                android:id="@+id/superintendentEmail"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -95,13 +95,13 @@
                 app:boxStrokeColor="#545454">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/studentYear"
+                    android:id="@+id/superintendentEmailValue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/adamina"
-                    android:hint="@string/student_year"
+                    android:hint="Superintendent Email"
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:textAlignment="center"
@@ -125,193 +125,13 @@
                 app:boxStrokeColor="#545454">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/studentSem"
+                    android:id="@+id/studentYr"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/adamina"
-                    android:hint="@string/student_sem"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:textAlignment="center"
-                    android:textColor="#545454"
-                    android:textColorHint="#545454" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/studentMobileHolder"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:padding="10dp"
-                android:textColorHint="#545454"
-                app:boxCornerRadiusBottomEnd="25dp"
-                app:boxCornerRadiusBottomStart="25dp"
-                app:boxCornerRadiusTopEnd="25dp"
-                app:boxCornerRadiusTopStart="25dp"
-                app:boxStrokeColor="#545454">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/studentMobile"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/adamina"
-                    android:hint="@string/student_mobileNumber"
-                    android:importantForAutofill="no"
-                    android:inputType="phone"
-                    android:textAlignment="center"
-                    android:textColor="#545454"
-                    android:textColorHint="#545454" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/parentMobileHolder"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:padding="10dp"
-                android:textColorHint="#545454"
-                app:boxCornerRadiusBottomEnd="25dp"
-                app:boxCornerRadiusBottomStart="25dp"
-                app:boxCornerRadiusTopEnd="25dp"
-                app:boxCornerRadiusTopStart="25dp"
-                app:boxStrokeColor="#545454">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/parentMobile"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/adamina"
-                    android:hint="@string/parent_mobileNumber"
-                    android:importantForAutofill="no"
-                    android:inputType="phone"
-                    android:textAlignment="center"
-                    android:textColor="#545454"
-                    android:textColorHint="#545454" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/homeAddressHolder"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:padding="10dp"
-                android:textColorHint="#545454"
-                app:boxCornerRadiusBottomEnd="25dp"
-                app:boxCornerRadiusBottomStart="25dp"
-                app:boxCornerRadiusTopEnd="25dp"
-                app:boxCornerRadiusTopStart="25dp"
-                app:boxStrokeColor="#545454">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/homeAddress"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/adamina"
-                    android:hint="@string/home_address"
-                    android:importantForAutofill="no"
-                    android:inputType="text"
-                    android:textAlignment="center"
-                    android:textColor="#545454"
-                    android:textColorHint="#545454" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/hostelNumberHolder"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:padding="10dp"
-                android:textColorHint="#545454"
-                app:boxCornerRadiusBottomEnd="25dp"
-                app:boxCornerRadiusBottomStart="25dp"
-                app:boxCornerRadiusTopEnd="25dp"
-                app:boxCornerRadiusTopStart="25dp"
-                app:boxStrokeColor="#545454">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/hostelNumber"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/adamina"
-                    android:hint="@string/hostel_number"
-                    android:importantForAutofill="no"
-                    android:inputType="text"
-                    android:textAlignment="center"
-                    android:textColor="#545454"
-                    android:textColorHint="#545454" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/roomNumberHolder"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:padding="10dp"
-                android:textColorHint="#545454"
-                app:boxCornerRadiusBottomEnd="25dp"
-                app:boxCornerRadiusBottomStart="25dp"
-                app:boxCornerRadiusTopEnd="25dp"
-                app:boxCornerRadiusTopStart="25dp"
-                app:boxStrokeColor="#545454">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/roomNumber"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/adamina"
-                    android:hint="@string/room_number"
-                    android:importantForAutofill="no"
-                    android:inputType="text"
-                    android:textAlignment="center"
-                    android:textColor="#545454"
-                    android:textColorHint="#545454" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/bedNumberHolder"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:padding="10dp"
-                android:textColorHint="#545454"
-                app:boxCornerRadiusBottomEnd="25dp"
-                app:boxCornerRadiusBottomStart="25dp"
-                app:boxCornerRadiusTopEnd="25dp"
-                app:boxCornerRadiusTopStart="25dp"
-                app:boxStrokeColor="#545454">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/bedNumber"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/adamina"
-                    android:hint="@string/bed_number"
+                    android:hint="@string/student_year"
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:textAlignment="center"

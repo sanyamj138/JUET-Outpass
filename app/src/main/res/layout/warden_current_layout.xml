@@ -16,10 +16,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <TextView
-            android:id="@+id/fromDate"
-            android:text="From :"
+            android:id="@+id/Name"
+            android:text="Name :"
             android:textSize="20dp"
             android:textStyle="bold"
             android:layout_width="wrap_content"
@@ -30,10 +29,54 @@
             android:layout_marginLeft="20dp"/>
 
         <TextView
-            android:id="@+id/fromValue"
+            android:id="@+id/NameValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Name"
+            android:text="Name"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/enroll"
+            android:text="Enroll"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/enrollValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/NameValue"
+            app:layout_constraintLeft_toRightOf="@id/enroll"
+            android:text="Enroll"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/fromDate"
+            android:text="From :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/enroll"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/fromValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/enrollValue"
             app:layout_constraintLeft_toRightOf="@id/fromDate"
             android:text="From Date"
             android:textSize="20dp"
@@ -105,27 +148,27 @@
             android:textSize="20dp"
             android:padding="10dp"/>
 
-        <TextView
-            android:id="@+id/status"
-            android:text="Status :"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/placeToVisit"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:padding="10dp"
-            android:layout_marginLeft="20dp"/>
+       <Button
+           android:id="@+id/approve"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Approve"
+           app:layout_constraintTop_toBottomOf="@id/placeToVisit"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toLeftOf="@id/reject"
+           android:layout_marginTop="15dp"
+           />
 
-        <TextView
-            android:id="@+id/statusValue"
+        <Button
+            android:id="@+id/reject"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Reject"
             app:layout_constraintTop_toBottomOf="@id/placeToVisitValue"
-            app:layout_constraintLeft_toRightOf="@id/status"
-            android:text="Status"
-            android:textSize="20dp"
-            android:padding="10dp"/>
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/approve"
+            android:layout_marginTop="15dp"/>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
