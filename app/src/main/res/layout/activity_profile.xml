@@ -72,7 +72,7 @@
                     android:fontFamily="@font/adamina"
                     android:hint="@string/student_branch"
                     android:importantForAutofill="no"
-                    android:inputType="textEmailAddress"
+                    android:inputType="text"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="#545454"

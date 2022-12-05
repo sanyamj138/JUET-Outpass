@@ -10,7 +10,7 @@
     android:layout_marginBottom="20dp"
     android:scrollbars="vertical"
     app:cardCornerRadius="20dp"
-    >
+    android:background="#8C6C63FF">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -21,6 +21,7 @@
             android:text="Name :"
             android:textSize="20dp"
             android:textStyle="bold"
+            android:fontFamily="@font/inter_extrabold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -31,6 +32,7 @@
         <TextView
             android:id="@+id/NameValue"
             android:layout_width="wrap_content"
+            android:fontFamily="@font/inter"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toRightOf="@id/Name"
@@ -43,6 +45,8 @@
             android:text="Enroll"
             android:textSize="20dp"
             android:textStyle="bold"
+            android:fontFamily="@font/inter_extrabold"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/Name"
@@ -53,6 +57,7 @@
         <TextView
             android:id="@+id/enrollValue"
             android:layout_width="wrap_content"
+            android:fontFamily="@font/inter"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/NameValue"
             app:layout_constraintLeft_toRightOf="@id/enroll"
@@ -70,12 +75,15 @@
             app:layout_constraintTop_toBottomOf="@id/enroll"
             app:layout_constraintLeft_toLeftOf="parent"
             android:padding="10dp"
+            android:fontFamily="@font/inter_extrabold"
+
             android:layout_marginLeft="20dp"/>
 
         <TextView
             android:id="@+id/fromValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
             app:layout_constraintTop_toBottomOf="@id/enrollValue"
             app:layout_constraintLeft_toRightOf="@id/fromDate"
             android:text="From Date"
@@ -92,12 +100,15 @@
             app:layout_constraintTop_toBottomOf="@id/fromDate"
             app:layout_constraintLeft_toLeftOf="parent"
             android:padding="10dp"
+            android:fontFamily="@font/inter_extrabold"
+
             android:layout_marginLeft="20dp"/>
 
         <TextView
             android:id="@+id/toValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
             app:layout_constraintTop_toBottomOf="@id/fromValue"
             app:layout_constraintLeft_toRightOf="@id/toDate"
             android:text="To Date"
@@ -114,6 +125,7 @@
             app:layout_constraintTop_toBottomOf="@id/toDate"
             app:layout_constraintLeft_toLeftOf="parent"
             android:padding="10dp"
+            android:fontFamily="@font/inter_extrabold"
             android:layout_marginLeft="20dp"/>
 
         <TextView
@@ -123,6 +135,7 @@
             app:layout_constraintTop_toBottomOf="@id/toValue"
             app:layout_constraintLeft_toRightOf="@id/purpose"
             android:text="Purpose"
+            android:fontFamily="@font/inter"
             android:textSize="20dp"
             android:padding="10dp"/>
 
@@ -133,6 +146,7 @@
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_extrabold"
             app:layout_constraintTop_toBottomOf="@id/purpose"
             app:layout_constraintLeft_toLeftOf="parent"
             android:padding="10dp"
@@ -142,6 +156,7 @@
             android:id="@+id/placeToVisitValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
             app:layout_constraintTop_toBottomOf="@id/purposeValue"
             app:layout_constraintLeft_toRightOf="@id/placeToVisit"
             android:text="Place on Leave"
@@ -154,6 +169,7 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:layout_width="wrap_content"
+            android:fontFamily="@font/inter_extrabold"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/placeToVisit"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -167,6 +183,7 @@
             app:layout_constraintTop_toBottomOf="@id/placeToVisitValue"
             app:layout_constraintLeft_toRightOf="@id/status"
             android:text="Status"
+            android:fontFamily="@font/inter"
             android:textSize="20dp"
             android:padding="10dp"/>
 

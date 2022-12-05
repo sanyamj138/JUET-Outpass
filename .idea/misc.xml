@@ -24,6 +24,8 @@
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/previous_application_layout.xml" value="0.1703125" />
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/warden_current_layout.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Shreyash Shukla/Documents/GitHub/JUET-Outpass/app/src/main/res/layout/warden_previous_layout.xml" value="0.17447916666666666" />
+        <entry key="app/src/main/res/drawable/buttonshape.xml" value="0.182" />
+        <entry key="app/src/main/res/drawable/editcalender.xml" value="0.182" />
         <entry key="app/src/main/res/drawable/edittextcorner.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/ic_background_dark.xml" value="0.173" />
         <entry key="app/src/main/res/drawable/ic_background_light.xml" value="0.2035" />
@@ -34,10 +36,26 @@
         <entry key="app/src/main/res/layout-night/activity_login.xml" value="0.2609805924412666" />
         <entry key="app/src/main/res/layout-night/activity_splash_screen.xml" value="0.2609805924412666" />
         <entry key="app/src/main/res/layout/activity_application.xml" value="0.2578397212543554" />
+        <entry key="app/src/main/res/layout/activity_faculty_profile.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/layout/activity_get_started.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/layout/activity_home_faculty.xml" value="0.2100011189778646" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.20485382080078124" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/activity_parent_current.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/activity_parent_home.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/activity_parent_previous.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/activity_previous_application.xml" value="0.2609805924412666" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.18283233642578123" />
+        <entry key="app/src/main/res/layout/activity_supre_current.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/activity_supre_home.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/activity_supre_previous.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/activity_warden_current.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/activity_warden_previous.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/previous_application_layout.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/warden_current_layout.xml" value="0.2609805924412666" />
+        <entry key="app/src/main/res/layout/warden_previous_layout.xml" value="0.2609805924412666" />
       </map>
     </option>
   </component>

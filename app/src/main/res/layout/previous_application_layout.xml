@@ -10,7 +10,7 @@
     android:layout_marginBottom="20dp"
     android:scrollbars="vertical"
     app:cardCornerRadius="20dp"
-    >
+    android:background="#8C6C63FF">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -21,6 +21,7 @@
             android:id="@+id/fromDate"
             android:text="From :"
             android:textSize="20dp"
+            android:fontFamily="@font/inter_extrabold"
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -32,6 +33,7 @@
         <TextView
             android:id="@+id/fromValue"
             android:layout_width="wrap_content"
+            android:fontFamily="@font/inter"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toRightOf="@id/fromDate"
@@ -44,6 +46,7 @@
             android:text="To :"
             android:textSize="20dp"
             android:textStyle="bold"
+            android:fontFamily="@font/inter_extrabold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/fromDate"
@@ -55,6 +58,7 @@
             android:id="@+id/toValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
             app:layout_constraintTop_toBottomOf="@id/fromValue"
             app:layout_constraintLeft_toRightOf="@id/toDate"
             android:text="To Date"
@@ -65,6 +69,7 @@
             android:id="@+id/purpose"
             android:text="Purpose :"
             android:textSize="20dp"
+            android:fontFamily="@font/inter_extrabold"
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -77,16 +82,18 @@
             android:id="@+id/purposeValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/toValue"
-            app:layout_constraintLeft_toRightOf="@id/purpose"
+            android:fontFamily="@font/inter"
+            android:padding="10dp"
             android:text="Purpose"
             android:textSize="20dp"
-            android:padding="10dp"/>
+            app:layout_constraintLeft_toRightOf="@id/purpose"
+            app:layout_constraintTop_toBottomOf="@id/toValue" />
 
         <TextView
             android:id="@+id/placeToVisit"
-            android:text="Place on Leave"
+            android:text="Place on Leave :"
             android:textSize="20dp"
+            android:fontFamily="@font/inter_extrabold"
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,16 +106,18 @@
             android:id="@+id/placeToVisitValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/purposeValue"
-            app:layout_constraintLeft_toRightOf="@id/placeToVisit"
+            android:fontFamily="@font/inter"
+            android:padding="10dp"
             android:text="Place on Leave"
             android:textSize="20dp"
-            android:padding="10dp"/>
+            app:layout_constraintLeft_toRightOf="@id/placeToVisit"
+            app:layout_constraintTop_toBottomOf="@id/purposeValue" />
 
         <TextView
             android:id="@+id/status"
             android:text="Status :"
             android:textSize="20dp"
+            android:fontFamily="@font/inter_extrabold"
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,6 +129,7 @@
         <TextView
             android:id="@+id/statusValue"
             android:layout_width="wrap_content"
+            android:fontFamily="@font/inter"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/placeToVisitValue"
             app:layout_constraintLeft_toRightOf="@id/status"

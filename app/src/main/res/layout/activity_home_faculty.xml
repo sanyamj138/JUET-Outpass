@@ -51,10 +51,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/applicationImage"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
         android:scrollIndicators="none"
         android:scrollbarThumbHorizontal="@null"
-        android:scrollbarThumbVertical="@null"
-        android:layout_marginBottom="50dp">
+        android:scrollbarThumbVertical="@null">
 
         <LinearLayout
             android:id="@+id/linearLayoutProfile"

@@ -21,7 +21,8 @@
         android:id="@+id/loginImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pageName"
         android:src="@drawable/login" />
 
     <com.google.android.material.textview.MaterialTextView
@@ -39,24 +40,46 @@
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/pageName"
         android:layout_width="wrap_content"
+        android:layout_below="@id/elipseDesign"
+        android:layout_marginTop="-100dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/loginImage"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/inter_extrabold"
         android:text="Welcome Onboard!"
         android:textColor="#545454"
         android:textSize="25sp" />
 
-    <EditText
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/studentBranchHolder"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="150dp"
-        android:hint="Enter ID Type"
-        android:textColorHint="@color/black"
-        />
+        android:layout_above="@+id/signInButton"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:padding="10dp"
+        android:textColorHint="#545454"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="#545454">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/studentBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/adamina"
+            android:hint="Enter ID Type"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#545454"
+            android:textColorHint="#545454" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <ImageButton
         android:id="@+id/signInButton"
